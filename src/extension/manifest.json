@@ -1,0 +1,17 @@
+{
+  "name": "EXTENSION",
+  "version": "0.1",
+  "description": "A minimal reproduction to demonstrate inconsistencies between chrome and edge",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  }
+}
